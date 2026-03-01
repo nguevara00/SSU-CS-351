@@ -37,11 +37,7 @@ The most noticeable result was that `alloca` produced significantly fewer heap b
 
 ---
 
-## 6) Considering either the malloc.c or alloca.cpp versions of the program, generate a diagram showing two nodes included in the diagram
-
-The relationship of head tail and node next pointers
-Show the size in bytes and structure of a node that allocated six bytes of data
-include the bytes pointer, and indicate using an arrow which byte in the allocated memory it points to
+## 6) Considering either the malloc.c or alloca.cpp versions of the program, generate a diagram showing two nodes included in the diagram, the relationship of head tail and node next pointers, show the size in bytes and structure of a node that allocated six bytes of data, include the bytes pointer, and indicate using an arrow which byte in the allocated memory it points to.
 
 ```
     Node Diagram:
