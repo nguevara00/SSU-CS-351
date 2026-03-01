@@ -138,7 +138,7 @@ Across the experiments using `-O2` optimization, `malloc` was the generally the 
 
 ## 2) Which program is slowest? Is it always the slowest?
 
-`new` was generally the slowest implementation. It was not always the slowest, `list` performed similarly and slightly slower in some of the configurations. The additional overhead of heap allocation by `operator new` contributed to its slower runtime than `malloc` or `alloca`. 
+`new` was generally the slowest implementation. It was not always the slowest, `list` performed similarly and slightly slower in some of the configurations. Under `-O2`, `new` is the slowest in baseline and small payload tests, but for payload = 1024 and chain length 500,000 `list` is slowest. The additional overhead of heap allocation by `operator new` contributed to its slower runtime than `malloc` or `alloca`. 
 
 ---
 
